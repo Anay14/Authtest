@@ -1,0 +1,93 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Anay",
+        "email": "anay@example.com",
+        "homeCountry": "India",
+        "currency": "INR",
+        "countriesTravelled": ["Nepal", "Thailand", "Singapore"]
+      },
+      {
+        "id": 2,
+        "name": "Gundu",
+        "email": "gundu@example.com",
+        "homeCountry": "India",
+        "currency": "INR",
+        "countriesTravelled": ["USA", "Nepal", "UK"]
+      },
+      {
+        "id": 3,
+        "name": "Gurjot",
+        "email": "gurjot@example.com",
+        "homeCountry": "India",
+        "currency": "INR",
+        "countriesTravelled": ["Nepal", "Germany", "France"]
+      },
+      {
+        "id": 4,
+        "name": "Cheeta",
+        "email": "cheeta@example.com",
+        "homeCountry": "India",
+        "currency": "INR",
+        "countriesTravelled": ["Nepal", "Australia", "Canada"]
+      }
+    ],
+    "trips": [
+      {
+        "id": 1,
+        "name": "Trip to Nepal",
+        "members": [1, 2, 3, 4],
+        "expenses": [1, 2, 3]
+      }
+    ],
+    "expenses": [
+      {
+        "id": 1,
+        "name": "Flights",
+        "amount": 20000,
+        "paidBy": [ { "userId": 1, "amount": 20000 } ],
+        "shares": [
+          { "userId": 1, "share": 5000 },
+          { "userId": 2, "share": 5000 },
+          { "userId": 3, "share": 5000 },
+          { "userId": 4, "share": 5000 }
+        ],
+        "location": "Nepal",
+        "category": "Travel"
+      },
+      {
+        "id": 2,
+        "name": "Food at Kanpur",
+        "amount": 10000,
+        "paidBy": [
+          { "userId": 4, "amount": 8000 },
+          { "userId": 2, "amount": 2000 }
+        ],
+        "shares": [
+          { "userId": 1, "share": 2500 },
+          { "userId": 2, "share": 2500 },
+          { "userId": 3, "share": 2500 },
+          { "userId": 4, "share": 2500 }
+        ],
+        "location": "Kanpur",
+        "category": "Food"
+      },
+      {
+        "id": 3,
+        "name": "Accommodation",
+        "amount": 10000,
+        "paidBy": [
+          { "userId": 1, "amount": 5000 },
+          { "userId": 3, "amount": 5000 }
+        ],
+        "shares": [
+          { "userId": 2, "share": 3333 },
+          { "userId": 3, "share": 3333 },
+          { "userId": 4, "share": 3334 }
+        ],
+        "location": "Nepal",
+        "category": "Accommodation"
+      }
+    ]
+  }
